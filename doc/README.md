@@ -1,15 +1,15 @@
 
 Setup
 ---------------------
-DigiByte Core is the original DigiByte client and it builds the backbone of the network. However, it downloads and stores the entire history of DigiByte transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
-DigiByte Core
+Cinque Core is the original Cinque client and it builds the backbone of the network. However, it downloads and stores the entire history of Cinque transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Cinque Core
 =============
 
 Setup
 ---------------------
-DigiByte Core is the original DigiByte client and it builds the backbone of the network. It downloads and, by default, stores the entire history of DigiByte transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Cinque Core is the original DigiByte client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Cinque transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download DigiByte Core, visit [digibytecore.org](https://digibytecore.org/en/releases/).
+To download Cinque Core, visit the [Github releases](https://github.com/Cinque-Network/Cinque-Core/releases).
 
 Running
 ---------------------
@@ -19,26 +19,24 @@ The following are some helpful notes on how to run DigiByte Core on your native 
 
 Unpack the files into a directory and run:
 
-- `bin/digibyte-qt` (GUI) or
-- `bin/digibyted` (headless)
+- `bin/cinque-qt` (GUI) or
+- `bin/cinqued` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run digibyte-qt.exe.
+Unpack the files into a directory, and then run cinque-qt.exe.
 
 ### macOS
 
-Drag DigiByte Core to your applications folder, and then run DigiByte Core.
+Drag Cinque Core to your applications folder, and then run Cinque Core.
 
 ### Need Help?
 
-* See the documentation at the [DigiByte Wiki](https://en.digibyte.it/wiki/Main_Page)
-for help and more information.
-* Ask for help on [Gitter](https://gitter.im/DigiByte-Core/protocol). If you don't have a Gitter client [find one here](https://gitter.im/apps).
+* Ask for help on the [Cinque Discord](https://discord.gg/u49hd9xV).
 
 Building
 ---------------------
-The following are developer notes on how to build DigiByte Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Cinque Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
 - [macOS Build Notes](build-osx.md)
@@ -50,12 +48,11 @@ The following are developer notes on how to build DigiByte Core on your native p
 
 Development
 ---------------------
-The DigiByte repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Cinque repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/digibyte/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -64,12 +61,7 @@ The DigiByte repo's [root README](/README.md) contains relevant information on t
 - [BIPS](bips.md)
 - [Dnsseed Policy](dnsseed-policy.md)
 - [Benchmarking](benchmarking.md)
-
-### Resources
-
-- Discuss project-specific development on [Gitter](https://gitter.im/DigiByte-Core/protocol). If you don't have a Gitter client find one [here](https://gitter.im/apps).
-- Discuss general DigiByte development on the general Gitter channel [here](https://gitter.im/DigiByte-Core/community).
-
+- 
 ### Miscellaneous
 
 - [Assets Attribution](assets-attribution.md)
