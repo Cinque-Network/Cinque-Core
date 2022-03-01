@@ -16,37 +16,29 @@
 
 <img width="450" type="image/svg+xml" src="./doc/logo_horizontal_github.svg" />
 
-# Development is now occurring on the DigiByte-Core repo
+## What is Cinque?
 
-As of 2020, development has now moved to the DigiByte-Core organization, under the digibyte repo
+Cinque (CNQ) is a highly secure, decentralized, distributed and time-tested global blockchain that was founded in early 2022 with a focus on cyber security, payments & secure communications technologies.
 
-You can find more over at <https://github.com/digibyte-core/digibyte>
+For more information, as well as an immediately useable, binary version of the Cinque Core software, see <https://cinque.network>
 
-## What is DigiByte?
+## Cinque FAQ
 
-DigiByte (DGB) is a highly secure, decentralized, distributed and time-tested global blockchain that was founded in early 2014 with a focus on cyber security, payments & secure communications technologies.
-
-For more information, as well as an immediately useable, binary version of the DigiByte Core software, see <https://digibyte.org>
-
-## DigiByte FAQ
-
-**Launch Date**: January 10th, 2014
+**Launch Date**: SOMEDATE, 2022
 
 **Blockchain Type**: Public, Decentralized, UTXO based, Multi-Algorithm
 
-**Ticker Symbol**: DGB
+**Ticker Symbol**: CNQ
 
-**Genesis Block Hash**: "USA Today: 10/Jan/2014, Target: Data stolen from up to 110M customers"
+**Genesis Block Hash**: "To be determined"
 
-**Max Total Supply**: 21 Billion DigiBytes in 21 Years (2035)
+**Max Total Supply**: 5 Million Cinque
 
-**Current Supply**: 14,293,304,147 DGB (May 2021)
+**Current Supply**: 0 CNQ (Not Launched)
 
-**Block Reward Reduction**: 1% Monthly
+**Current Block Reward**: Less than triple digits CNQ (TBD)
 
-**Current Block Reward**: 520 DGB (May 2021)
-
-**Mining Algorithms**: Five individual: SHA256, Scrypt, Odocrypt, Skein & Qubit
+**Mining Algorithms**: Five individual: Equihash 192,7, MYR-GRS, Ghostrider, Keccak & Heavyhash
 
 **Block Interval**: 15 Second Blocks (75 seconds per algo)
 
@@ -54,63 +46,47 @@ For more information, as well as an immediately useable, binary version of the D
 
 **Difficulty Retarget**: Every 1 Block, 5 Separate Difficulties, independent difficulty for each Mining Algo
 
-**SegWit Support**: Yes. First major altcoin to successfully activate Segwit. (April 2017)
+**SegWit Support**: Yes.
 
-**Hardforks**: 5. DigiShield, MultiAlgo, MultiShield, DigiSpeed, Odocrypt
+**Hardforks**: None Yet.
 
-**Softforks**: 3. SegWit, CSV, NVersionBits
+**Softforks**: TBD.
 
-You can mine DigiByte on one of five separate mining algorithms. Each algo averages out to mine 20% of new blocks. This allows for much greater decentralization than other blockchains. An attacker with 99% of of any individual algorithm would still be unable to hardfork the blockchain, making DigiByte much more secure against PoW attacks than other blockchains.
+You can mine Cinque on one of five separate mining algorithms. Each algo averages out to mine 20% of new blocks. This allows for much greater decentralization than other blockchains. An attacker with 99% of of any individual algorithm would still be unable to hardfork the blockchain, making Cinque much more secure against PoW attacks than other blockchains.
 
-**DigiShield Hardfork**: Block 67,200, Feb. 28th, 2014
-
-**MultiAlgo Hardfork**: Block 145k, Sep. 1st 2014
-
-**MultiShield Hardfork**: Block 400k, Dec. 10th 2014
-
-**DigiSpeed Hardfork**: Block 1,430,000 Dec. 4th 2015
-
-**Odocrypt Hardfork**: Block 9,112,320 July 22nd 2019
-
-## DigiByte vs Bitcoin
+## Cinque vs Bitcoin
 
 **Security**:
 
-- 5 DigiByte mining algorithms vs. 1 Bitcoin mining algorithm.
-- DigiByte mining is much more decentralized.
-- DigiByte mining algorithms can be changed out in the future to prevent centralization.
+- 5 Cinque mining algorithms vs. 1 Bitcoin mining algorithm.
+- Cinque mining is much more decentralized.
+- Cinque mining algorithms can be changed out in the future to prevent centralization.
 
 **Speed**:
 
-- DigiByte transactions occur much faster than Bitcoin transactions.
+- Cinque transactions occur much faster than Bitcoin transactions.
 - 1-2 second transaction notifications.
-- 15 second DigiByte blocks vs. 10 minute Bitcoin blocks.
-- DigiByte has 6x block confirmations 1.5 minutes vs. 1 hour with Bitcoin.
+- 15 second Cinque blocks vs. 10 minute Bitcoin blocks.
+- Cinque has 6x block confirmations 1.5 minutes vs. 1 hour with Bitcoin.
 
 **Transaction Volume**:
 
-- DigiByte can handle many more transactions per second.
+- Cinque can handle many more transactions per second.
 - Bitcoin can only handle 3-4 transactions per second.
-- DigiByte currently can handle 560+ transactions per second.
-
-**Total Supply**:
-
-- 21 billion DigiBytes will be created over 21 years.
-- Only 21 million Bitcoin will be created over 140 years.
-- 1000:1 ratio. 1000 DigiByte for every Bitcoin.
+- Cinque currently can handle 560+ transactions per second.
 
 **Marketability & Usability**:
 
-- DigiByte is an easy brand to market to consumers.
-- DigiBytes are much cheaper to acquire.
+- Cinque is an easy brand to market to consumers.
+- Cinque is also much cheaper to acquire.
 
 ## License
 
-DigiByte Core is released under the terms of the MIT license. See [COPYING](COPYING) for more information or see <https://opensource.org/licenses/MIT>.
+Cinque Core is released under the terms of the MIT license. See [COPYING](COPYING) for more information or see <https://opensource.org/licenses/MIT>.
 
 ## Development Process
 
-The `develop` branch is regularly built and tested, but is not guaranteed to be completely stable.  Additionally, the develop branch represents ongoing development from which candidate releases will be cut.  The `master` branch represents the current stable version currently in production. [Tags](https://github.com/digibyte/digibyte/tags) are created regularly to indicate new official, stable release versions of DigiByte Core.  Finally, `feature/{a-new-feature}` branches represent current development destined for future releases.
+The `develop` branch is regularly built and tested, but is not guaranteed to be completely stable.  Additionally, the develop branch represents ongoing development from which candidate releases will be cut.  The `master` branch represents the current stable version currently in production. [Tags](https://github.com/Cinque-Network/Cinque-COre/tags) are created regularly to indicate new official, stable release versions of Cinque Core.  Finally, `feature/{a-new-feature}` branches represent current development destined for future releases.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -127,3 +103,5 @@ The Travis CI system makes sure that every pull request is built for Windows, Li
 ### Manual Quality Assurance (QA) Testing
 
 Changes are required be tested by somebody other than the developer who wrote the code. This is especially important for large or high-risk changes. A test plan must be included with the pull request description if testing the changes is not straightforward.
+
+Thank you for using Cinque!
