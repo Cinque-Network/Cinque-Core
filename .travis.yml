@@ -113,7 +113,7 @@ jobs:
         RUN_TESTS=true
         RUN_BENCH=true
         GOAL="install"
-        DIGIBYTE_CONFIG="--enable-zmq --with-gui=qt5 --enable-glibc-back-compat --enable-reduce-exports --enable-debug CXXFLAGS=\"-g0 -O2\""
+        CINQUE_CONFIG="--enable-zmq --with-gui=qt5 --enable-glibc-back-compat --enable-reduce-exports --enable-debug CXXFLAGS=\"-g0 -O2\""
 # x86_64 Linux (Qt5 & system libs)
     - stage: test
       env: >-
@@ -122,7 +122,7 @@ jobs:
         NO_DEPENDS=1
         RUN_TESTS=true
         GOAL="install"
-        DIGIBYTE_CONFIG="--enable-zmq --with-incompatible-bdb --enable-glibc-back-compat --enable-reduce-exports --with-gui=qt5 CPPFLAGS=-DDEBUG_LOCKORDER"
+        CINQUE_CONFIG="--enable-zmq --with-incompatible-bdb --enable-glibc-back-compat --enable-reduce-exports --with-gui=qt5 CPPFLAGS=-DDEBUG_LOCKORDER"
 # x86_64 Linux, No wallet
     - stage: test
       env: >-
@@ -131,7 +131,7 @@ jobs:
         DEP_OPTS="NO_WALLET=1"
         RUN_TESTS=true
         GOAL="install"
-        DIGIBYTE_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
+        CINQUE_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
 # Cross-Mac
     - stage: test
       env: >-
@@ -139,7 +139,7 @@ jobs:
         PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev python3-setuptools-git"
         OSX_SDK=10.11
         GOAL="all deploy"
-        DIGIBYTE_CONFIG="--enable-gui --enable-reduce-exports --enable-werror"
+        CINQUE_CONFIG="--enable-gui --enable-reduce-exports --enable-werror"
     - stage: lint
       env:
       cache: false
