@@ -1,15 +1,13 @@
-# Contributing to DigiByte Core
+# Contributing to Cinque Core
 
-The DigiByte Core project operates an open contributor model where anyone is welcome to contribute towards development in the form of peer review, testing and patches. This document explains the practical process and guidelines for contributing.
+The Cinque Core project operates an open contributor model where anyone is welcome to contribute towards development in the form of peer review, testing and patches. This document explains the practical process and guidelines for contributing.
 
 Firstly in terms of structure, there is no particular concept of "Core developers" in the sense of privileged people. Open source often naturally revolves around meritocracy where longer term contributors gain more trust from the developer community. However, some hierarchy is necessary for practical purposes. As such there are repository "maintainers" who are responsible for merging pull requests as well as a "lead maintainer" who is responsible for the release cycle, overall merging, moderation and appointment of maintainers.
-
-If you're looking for somewhere to start contributing, check out the [good first issue](https://github.com/DigiByte-Core/digibyte/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) list.
 
 ## Communication Channels
 
 Most communication about DigiByte Core development happens in the
-[Protocol](https://gitter.im/DigiByte-Core/protocol) channel on Gitter. The easiest way to participate on Gitter is via one of the freely available clients, [Gitter Apps](https://gitter.im/apps).
+[Cinque Discordl](https://discord.gg/u49hd9xV) Server.
 
 Discussion about code base improvements happens in GitHub issues and on pull requests.
 
@@ -17,7 +15,7 @@ Discussion about code base improvements happens in GitHub issues and on pull req
 
 The codebase is maintained using the "contributor workflow" where everyone without exception contributes patch proposals using "pull requests". This facilitates social contribution, easy testing and peer review.
 
-DigiByte uses the [GitFlow Branching Model](https://datasift.github.io/gitflow/IntroducingGitFlow.html). To contribute a patch, the workflow is as follows:
+Cinque uses the [GitFlow Branching Model](https://datasift.github.io/gitflow/IntroducingGitFlow.html). To contribute a patch, the workflow is as follows:
 
   1. Fork repository
   2. Create feature branch
@@ -161,7 +159,7 @@ As most reviewers are themselves developers with their own projects, the review 
 
 ## Release Policy
 
-The project leader is the release manager for each DigiByte Core release.
+The project leader is the release manager for each Cinque Core release.
 
 ## Copyright
 
