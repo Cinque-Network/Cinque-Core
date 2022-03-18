@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.digibyte.DigiBytePayment</string>
+      <string>io.cinque.CinquePayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>digibyte</string>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.digibyte.paymentrequest</string>
+      <string>io.cinque.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>DigiByte payment request</string>
+      <string>Cinque payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -71,7 +71,7 @@
         <string>application/x-digibyte-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>digibytepaymentrequest</string>
+          <string>cinquepaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.digibyte.paymentrequest</string>
+        <string>io.cinque.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
