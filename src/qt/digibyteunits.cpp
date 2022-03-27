@@ -42,9 +42,9 @@ QString DigiByteUnits::longName(int unit)
 {
     switch(unit)
     {
-    case DGB: return QString("DGB");
-    case mDGB: return QString("mDGB");
-    case uDGB: return QString::fromUtf8("µDGB (bits)");
+    case DGB: return QString("CNQ");
+    case mDGB: return QString("mCNQ");
+    case uDGB: return QString::fromUtf8("µCNQ (bits)");
     case SAT: return QString("Satoshi (sat)");
     default: return QString("???");
     }
@@ -64,9 +64,9 @@ QString DigiByteUnits::description(int unit)
 {
     switch(unit)
     {
-    case DGB: return QString("DigiBytes");
-    case mDGB: return QString("Milli-DigiBytes (1 / 1" THIN_SP_UTF8 "000)");
-    case uDGB: return QString("Micro-DigiBytes (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case DGB: return QString("Cinques");
+    case mDGB: return QString("Milli-Cinque (1 / 1" THIN_SP_UTF8 "000)");
+    case uDGB: return QString("Micro-Cinques (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
