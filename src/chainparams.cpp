@@ -198,7 +198,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x6495a84f8f83981a435a6cbf9e6dd4bf0f38618c8325213ca6ef6add40c0ddd8"); // Block 6,000,000
+        consensus.defaultAssumeValid = uint256S("0x00"); // Block 0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -245,11 +245,10 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data as of block 6495a84f8f83981a435a6cbf9e6dd4bf0f38618c8325213ca6ef6add40c0ddd8 (height 6,000,000).
-            1416891634, // * UNIX timestamp of last known number of transactions
-            1046018,  // * total number of transactions between genesis and that timestamp
-                        //   (the tx=... number in the SetBestChain debug.log lines)
-            0.1         // * estimated number of transactions per second after that timestamp
+            // Data as of block 00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c (height 0).
+            /* nTime    */ 1648274400,
+            /* nTxCount */ 0,
+            /* dTxRate  */ 0.0
         };
 
         /* disable fallback fee on mainnet */
@@ -412,10 +411,10 @@ public:
         };
 
         chainTxData = ChainTxData{
-            // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
-            /* nTime    */ 1531929919,
-            /* nTxCount */ 19438708,
-            /* dTxRate  */ 0.626
+            // Data from rpc: getchaintxstats 4096 00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c
+            /* nTime    */ 1648274400,
+            /* nTxCount */ 0,
+            /* dTxRate  */ 0.0
         };
 
         /* enable fallback fee on testnet */
@@ -510,10 +509,10 @@ public:
         nDefaultPort = 18444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1519460922, 4, 0x207fffff, 1, 8000 * COIN);      
+        genesis = CreateGenesisBlock(1648274400, 4080782383, 0x1d00ffff, 1, 12.5 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4598a0f2b823aaf9e77ee6d5e46f1edb824191dcd48b08437b7cec17e6ae6e26"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72ddd9496b004221ed0557358846d9248ecd4c440ebd28ed901efc18757d0fad"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c"));
+        assert(genesis.hashMerkleRoot == uint256S("0x50fa04e624640fde15b97765a8f2468b9495012275ce96f8834a3bf01b702ee1"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -524,7 +523,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("4598a0f2b823aaf9e77ee6d5e46f1edb824191dcd48b08437b7cec17e6ae6e26")},
+                {0, uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c")},
             }
         };
 
@@ -540,7 +539,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "dgbrt";
+        bech32_hrp = "cnqrt";
     }
 };
 
