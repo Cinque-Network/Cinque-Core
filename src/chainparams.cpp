@@ -22,7 +22,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
     txNew.vin.resize(1);
     txNew.vout.resize(1);
     txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << std::vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-    txNew.vout[0].nValue = 8000;
+    txNew.vout[0].nValue = 12.5;
     txNew.vout[0].scriptPubKey = CScript() << 0x0 << OP_CHECKSIG;
 
     CBlock genesis;
@@ -78,7 +78,7 @@ public:
         //consensus.nSubsidyHalvingInterval = 210000; - DGB
         consensus.BIP16Exception = uint256S("0x0");
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0xadd8ca420f557f62377ec2be6e6f47b96cf2e68160d58aeb7b73433de834cca0");
+        consensus.BIP34Hash = uint256S("0x00"); // activate upon launch
         consensus.BIP65Height = 0; //
         consensus.BIP66Height = 0; //
 
@@ -185,7 +185,7 @@ public:
         // Deployment of Equihash algo softfork
         //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].bit = 3;
         //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nStartTime = 1489997089; // July, 2017 
-        //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nTimeout = 1521891345;    // July, 2018
+        //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nf  Timeout = 1521891345;    // July, 2018
 
         // Deployment of Ethash algo softfork
         //consensus.vDeployments[Consensus::DEPLOYMENT_ETHASH].bit = 4;
@@ -212,10 +212,10 @@ public:
         nDefaultPort = 12024;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1648274400, 2447652, 0x1d00ffff, 1, 12.5);
+        genesis = CreateGenesisBlock(1648274400, 4080782383, 0x1d00ffff, 1, 12.5);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x7497ea1b465eb39f1c8f507bc877078fe016d6fcb6dfad3a64c98dcc6e1e8496"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72ddd9496b004221ed0557358846d9248ecd4c440ebd28ed901efc18757d0fad"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c"));
+        assert(genesis.hashMerkleRoot == uint256S("0x50fa04e624640fde15b97765a8f2468b9495012275ce96f8834a3bf01b702ee1"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         //vSeeds.emplace_back("seed.digibyte.org"); // Website collective
@@ -240,7 +240,7 @@ public:
 
         checkpointData = (CCheckpointData) {
          {
-            {     0, uint256S("0x7497ea1b465eb39f1c8f507bc877078fe016d6fcb6dfad3a64c98dcc6e1e8496")},
+            {     0, uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c")},
          }
         };
 
@@ -379,10 +379,10 @@ public:
         nDefaultPort = 12026;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1648274400, 2411473, 0x1d00ffff, 1, 12.5 * COIN);
+        genesis = CreateGenesisBlock(1648274400, 4080782383, 0x1d00ffff, 1, 12.5 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x308ea0711d5763be2995670dd9ca9872753561285a84da1d58be58acaa822252"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72ddd9496b004221ed0557358846d9248ecd4c440ebd28ed901efc18757d0fad"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c"));
+        assert(genesis.hashMerkleRoot == uint256S("0x50fa04e624640fde15b97765a8f2468b9495012275ce96f8834a3bf01b702ee1"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -407,7 +407,7 @@ public:
 
         checkpointData = {
             {
-                {     0, uint256S("0x308ea0711d5763be2995670dd9ca9872753561285a84da1d58be58acaa822252")},
+                {     0, uint256S("0x00000000bd4cd94c578b673e1404e92cfecc80fa51f612f5aa77e100a2ed7b1c")},
             }
         };
 
