@@ -185,7 +185,7 @@ public:
         // Deployment of Equihash algo softfork
         //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].bit = 3;
         //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nStartTime = 1489997089; // July, 2017 
-        //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nf  Timeout = 1521891345;    // July, 2018
+        //consensus.vDeployments[Consensus::DEPLOYMENT_EQUIHASH].nTimeout = 1521891345;    // July, 2018
 
         // Deployment of Ethash algo softfork
         //consensus.vDeployments[Consensus::DEPLOYMENT_ETHASH].bit = 4;
